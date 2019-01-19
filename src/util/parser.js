@@ -18,7 +18,7 @@ const parseFile = path => {
           poster: "",
           quantity: parseInt(line[14]),
           price: parseFloat(line[15].replace("$", "")),
-          size: line[39].replace(/\[Size:(\w +?)]/,"$1"),
+          size: line[39].replace(/\[Size:(\w+?)]/,"$1"),
           status: line[34].length ? "paid" : "sold",
           tracking: "",
           product: {
